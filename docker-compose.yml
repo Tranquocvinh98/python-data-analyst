@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+    container_name: crawl_data
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+      - .env
+    volumes:
+      - .:/app
+    command: python -u query_total_login.py

@@ -1,0 +1,8 @@
+data_base_source='data-analyst'
+user_source='tranquocvinh'
+password_source='13579'
+host_source='192.168.1.105'
+data_base_target='data-analyst-summury'
+user_target='tranquocvinh'
+password_target='13579'
+host_target='192.168.1.105'
