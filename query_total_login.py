@@ -98,7 +98,7 @@ def job():
     insert_into_db(result)
 
 if __name__ == '__main__':
-    schedule.every().day.at("17:12").do(job)
+    schedule.every().day.at(cf.time_run_job).do(job)
     while True:
         schedule.run_pending()
         time.sleep(60)  # Kiểm tra mỗi phút

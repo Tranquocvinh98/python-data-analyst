@@ -4,7 +4,7 @@ services:
   app:
     build:
       context: .
-    container_name: crawl_data
+    container_name: query_data
     environment:
       - TZ=Asia/Ho_Chi_Minh
       - .env

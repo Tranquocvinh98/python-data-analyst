@@ -1,8 +1,14 @@
-data_base_source='data-analyst'
-user_source='tranquocvinh'
-password_source='13579'
-host_source='192.168.1.105'
-data_base_target='data-analyst-summury'
-user_target='tranquocvinh'
-password_target='13579'
-host_target='192.168.1.105'
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+data_base_source=os.getenv('data_base_source')
+user_source=os.getenv('user_source')
+password_source=os.getenv('password_source')
+host_source=os.getenv('host_source')
+data_base_target=os.getenv('data_base_target')
+user_target=os.getenv('user_target')
+password_target=os.getenv('password_target')
+host_target=os.getenv('host_target')
+time_run_job=os.getenv('time_run_job')
